@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<title>Creative Coding Portfolio</title>
+
+
+
+<style>
+
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body{
+
+
+
+    min-height:100vh;
+
+
+
+    background:
+
+    radial-gradient(circle at top,
+
+    #2d3748 0%,
+
+    #1a202c 45%,
+
+    #0f172a 100%);
+
+
+
+    font-family:"Segoe UI", sans-serif;
+
+
+
+    padding:50px;
+
+}
+
+
+
+h1{
+
+
+
+    text-align:center;
+
+
+
+    color:white;
+
+
+
+    font-size:3rem;
+
+
+
+    margin-bottom:10px;
+
+
+
+    letter-spacing:1px;
+
+}
+
+
+
+.subtitle{
+
+
+
+    text-align:center;
+
+
+
+    color:#cbd5e1;
+
+
+
+    margin-bottom:50px;
+
+
+
+    font-size:1rem;
+
+}
+
+
+
+#projects{
+
+
+
+    max-width:1400px;
+
+
+
+    margin:auto;
+
+
+
+    display:grid;
+
+
+
+    grid-template-columns:1fr 1fr;
+
+
+
+    gap:30px;
+
+}
+
+
+
+.cell{
+
+
+
+    background:rgba(255,255,255,0.08);
+
+
+
+    border-radius:20px;
+
+
+
+    overflow:hidden;
+
+
+
+    box-shadow:
+
+    0 12px 35px rgba(0,0,0,.35);
+
+
+
+    transition:.25s ease;
+
+}
+
+
+
+.cell:hover{
+
+
+
+    transform:translateY(-8px);
+
+
+
+    box-shadow:
+
+    0 18px 45px rgba(0,0,0,.5);
+
+}
+
+
+
+.card-title{
+
+
+
+    color:white;
+
+
+
+    text-align:center;
+
+
+
+    font-weight:600;
+
+
+
+    padding:16px;
+
+
+
+    font-size:1.15rem;
+
+
+
+    background:rgba(255,255,255,0.08);
+
+
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.card-content{
+
+
+
+    display:flex;
+
+
+
+    height:260px;
+
+}
+
+
+
+.preview{
+
+
+
+    width:55%;
+
+
+
+    overflow:hidden;
+
+}
+
+
+
+iframe{
+
+
+
+    width:600px;
+
+    height:400px;
+
+
+
+    border:none;
+
+
+
+    transform-origin:top left;
+
+    transform:scale(0.55);
+
+}
+
+.description{
+
+
+
+    width:45%;
+
+
+
+    padding:18px;
+
+
+
+    color:white;
+
+
+
+    background:rgba(255,255,255,0.04);
+
+
+
+    overflow:auto;
+
+}
+
+
+
+.description h3{
+
+
+
+    margin-bottom:10px;
+
+
+
+    font-size:1rem;
+
+}
+
+
+
+.description p{
+
+
+
+    font-size:0.9rem;
+
+
+
+    line-height:1.6;
+
+
+
+    color:#d1d5db;
+
+}
+
+
+
+.description strong{
+
+
+
+    color:white;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<h1>Creative Coding Portfolio</h1>
+
+
+
+<p class="subtitle">
+
+숭실대학교 글로벌미디어학부 20233035 이정수 · p5.js 작품 모음
+
+</p>
+
+
+
+<div id="projects">
+
+
+
+    <!-- 과제 1 -->
+
+    <div class="cell">
+
+
+
+        <div class="card-title">
+
+            과제 1 : Rainbow UFO
+
+        </div>
+
+
+
+        <div class="card-content">
+
+
+
+            <div class="preview">
+
+                <iframe src="sample1/index.html"></iframe>
+
+            </div>
+
+
+
+            <div class="description">
+
+
+
+                <h3>작품 설명</h3>
+
+
+
+                <p>
+
+                다양한 색상의 원형 도형을 활용하여
+
+                우주 공간 속 UFO를 표현하였다.
+
+                무지개 배경과 빛 효과를 통해
+
+                몽환적이고 신비로운 분위기를 연출하였다.
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- 과제 4 -->
+
+    <div class="cell">
+
+
+
+        <div class="card-title">
+
+            과제 4 : Motion Animation
+
+        </div>
+
+
+
+        <div class="card-content">
+
+
+
+            <div class="preview">
+
+                <iframe src="sample4/index.html"></iframe>
+
+            </div>
+
+
+
+            <div class="description">
+
+
+
+                <h3>작품 설명</h3>
+
+
+
+                <p>
+
+                p5.js 애니메이션 기능을 활용하여
+
+                움직임과 변화를 표현한 작품이다.
+
+                시간의 흐름에 따라 객체가 변화하며
+
+                보다 생동감 있는 화면을 구성하였다.
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- 과제 2 -->
+
+    <div class="cell">
+
+
+
+        <div class="card-title">
+
+            과제 2 : Character Portrait
+
+        </div>
+
+
+
+        <div class="card-content">
+
+
+
+            <div class="preview">
+
+                <iframe src="sample2/index.html"></iframe>
+
+            </div>
+
+
+
+            <div class="description">
+
+
+
+                <h3>작품 설명</h3>
+
+
+
+                <p>
+
+                다양한 도형을 조합하여 인물 캐릭터를
+
+                제작하였다.
+
+                얼굴의 비율과 세부 요소를 조정하여
+
+                캐릭터의 특징을 표현하였다.
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- 과제 3 -->
+
+    <div class="cell">
+
+
+
+        <div class="card-title">
+
+            과제 3 : Interactive Character
+
+        </div>
+
+
+
+        <div class="card-content">
+
+
+
+            <div class="preview">
+
+                <iframe src="sample3/index.html"></iframe>
+
+            </div>
+
+
+
+            <div class="description">
+
+
+
+                <h3>작품 설명</h3>
+
+
+		<p style="margin-top:10px;color:#fbbf24;">
+		※ 키보드 조작 전 작품 화면을 한 번 클릭해주세요.
+		</p>
+                <p>
+
+                사용자의 입력에 따라 캐릭터의 상태가
+
+                변화하는 인터랙티브 작품이다.
+
+                키보드와 마우스를 활용하여
+
+                캐릭터의 외형을 변경하거나 이동시킬 수 있다.
+
+                </p>
+
+
+
+                <br>
+
+
+
+                <p>
+
+
+
+                <strong>조작 방법</strong>
+
+
+
+                <br><br>
+
+
+
+                🖱️ 마우스 왼쪽 클릭<br>
+
+                → 의상이 벗겨지며 상태 변화
+
+
+
+                <br><br>
+
+
+
+                ⌨️ H 키<br>
+
+                → 머리 색상 변경
+
+
+
+                <br><br>
+
+
+
+                ⌨️ C 키<br>
+
+                → 의상 색상 변경
+
+
+
+                <br><br>
+
+
+
+                ⌨️ R 키<br>
+
+                → 기본 상태로 초기화
+
+
+
+                <br><br>
+
+
+
+                ⬅️➡️⬆️⬇️ 방향키<br>
+
+                → 캐릭터 이동
+
+
+
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html> 
+
